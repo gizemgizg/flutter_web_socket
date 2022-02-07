@@ -10,6 +10,6 @@ class HomeScreenInit extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder(
         init: HomeViewModel(),
-        builder: (_) => HomeScreen());
+        builder: (_) => const HomeScreen());
   }
 }

@@ -20,7 +20,7 @@ class DataModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['topic'] = topic;
     data['action'] = action;
     data['symbol'] = symbol;
@@ -56,7 +56,7 @@ class Data {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     if (bids != null) {
       data['bids'] = bids!.map((v) => v.toJson()).toList();
     }
